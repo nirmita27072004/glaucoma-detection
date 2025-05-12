@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glaucoma Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <style>
+        /* Add your CSS here or in styles.css */
+        .result-container { text-align: center; padding: 50px; }
+        .result-image { max-width: 300px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .result-message { font-size: 24px; margin-bottom: 30px; }
+        .result-table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+        .result-table td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; }
+        .result-table td:first-child { font-weight: bold; width: 30%; } /* Adjust width as needed */
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        {% if result and result.result == 'positive' %}
+            <img src="static/GlaucomaEyeDiagram-min.jpg" alt="Glaucoma Detected" class="result-image">
+            <div class="result-message" style="color: red;">Glaucoma Detected</div>
+            <table class="result-table">
+                <tr><td>Result:</td><td>Positive</td></tr>
+                <tr><td>Recommendation:</td><td>Consult an ophthalmologist immediately.</td></tr>
+                <tr><td>Resources:</td><td><a href="{{ url_for('precautions') }}">Precautions and Resources</a></td></tr>
+            </table>
+        {% elif result and result.result == 'negative' %}
+            <img src="static/GlaucomaEyeDiagram-min.jpg" alt="Glaucoma Not Detected" class="result-image">
+            <div class="result-message" style="color: green;">Glaucoma Not Detected</div>
+            <table class="result-table">
+                <tr><td>Result:</td><td>Negative</td></tr>
+                <tr><td>Recommendation:</td><td>Continue regular eye checkups.</td></tr>
+                <tr><td>Resources:</td><td><a href="{{ url_for('precautions') }}">Precautions and Reminders</a></td></tr>
+            </table>
+        {% else %}
+            <p>Error: Could not determine result.</p>
+            <p><a href="{{ url_for('index') }}">Home</a></p>
+        {% endif %}
+        <p><a href="{{ url_for('index') }}">Home</a></p>
+    </div>
+</body>
+</html>

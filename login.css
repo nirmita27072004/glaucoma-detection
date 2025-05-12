@@ -1,0 +1,71 @@
+/* login.css */
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%; /* Take full width */
+    max-width: 500px; /* Limit max width on larger screens */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.btn-primary:hover {
+    background-color: #1f80c0;
+}
+
+.mt-3 {
+    margin-top: 100px;
+}
+
+.mt-2 {
+    margin-top: 100px;
+}
+
+.text-danger {
+    color: red;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

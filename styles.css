@@ -1,0 +1,114 @@
+/* Global Styles */
+* {
+    box-sizing: border-box; /* Ensures consistent sizing for all elements */
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: floralwhite ;/* Ensure body background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Button Styling */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+    border: 2px solid #2980b9; /* Adding border on hover for better effect */
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Section Padding */
+section {
+    padding: 50px 0;
+}
+
+/* Hiding Specific Sections by Default */
+#result-page, #test-form, #precautions-page {
+    display: none; /* Sections will be hidden by default */
+}
+
+/* Precaution Page Specific Styling */
+#precautions-page ul {
+    padding-left: 20px;  /* Increase padding for more space */
+    margin-top: 20px;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    
+}
+/* Navbar Styling */
+/* Custom styles for your project */
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fb;
+}
+
+/* Navbar Customization */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+/* Precautions Link Animation */
+.nav-link:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Header Section Styling */
+header {
+    background-color: #ecf0f1;
+    padding: 60px 0;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 3rem;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+}

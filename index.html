@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Glaucoma Detection</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Glaucoma Detection</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('test') }}">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__pulse animate__infinite" href="{{ url_for('precautions') }}" style="color: coral;">Precautions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero bg-info text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeIn">Glaucoma Detection System</h1>
+            <p style="color:white; "class="lead animate__animated animate__fadeIn animate__delay-1s">Detect Glaucoma early to protect your vision. Take the test now and monitor your eye health.</p>
+            <a href="{{ url_for('test') }}" class="btn btn-primary btn-lg mt-3 animate__animated animate__pulse animate__infinite">Start Test</a>
+        </div>
+    </header>
+    <section class="features py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 animate__animated animate__fadeIn">Why Early Glaucoma Detection is Important</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <img src="static/60308.jpg"  class="img-fluid rounded-circle mb-3" alt="Image" height="200px">
+                        <h4>Prevent Blindness</h4>
+                        <p>Early detection can prevent severe damage to your eyes, including blindness.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <img src="static/5-Cutting-Edge-Language-Models-Transforming-Healthcare.jpg" class="img-fluid rounded-circle mb-3" alt="Image">
+                        <h4>Easy to Monitor</h4>
+                        <p>Our system makes it simple to keep track of your eye health using cutting-edge technology.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <img src="static/personal-recs-highlight.jpg" height="50" class="img-fluid rounded-circle mb-3" alt="Image">
+                        <h4>Personalized Results</h4>
+                        <p>Receive personalized results and recommendations based on your test outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="test-info py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 animate__animated animate__fadeIn">How the Test Works</h2>
+            <p class="lead">Our system uses advanced image processing techniques to analyze retinal images and detect early signs of glaucoma.</p>
+            <p

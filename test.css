@@ -1,0 +1,109 @@
+/* test.css - Styles specifically for test.html */
+
+/* Ensure test page has its unique background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ace2f0;  /* Light background for the test page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to hold the test form content */
+#test-form {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the form inputs and button */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Additional styling for headings, if needed */
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Navbar Styling */
+header {
+    background-color: #2c3e50; /* Dark background for navbar */
+    padding: 25px 0;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    height: 50px;
+    background-color: #3498db;
+    margin: 10;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px; /* Space out the items */
+}
+
+nav ul li a {
+    background-color: #3498db;
+    text-decoration: none;
+    color: white; /* White color for the text */
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+    background-color: #3498db;
+    color: yellow;
+}
+
+/* Specific styles for the "Precautions" link */
+.precautions-link {
+    color: white; /* Coral color for "Precautions" */
+    animation: pulsate 3s infinite; /* Add pulsating effect */
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
